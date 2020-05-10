@@ -27,12 +27,12 @@ ul#list li.list-item {
 
 ul#list li.list-item a {
   font-family: monospace;
-  color: white;
+  color: #90ee02;
   opacity: 0.87;
   font-size: x-large;
-  text-decoration: underline;
   letter-spacing: 1px;
-  /* text-underline-position: under; */
+  text-decoration: none;
+  border-bottom: #90ee02 1px solid;
 }
 
 .link-container {
@@ -42,15 +42,17 @@ ul#list li.list-item a {
   padding: 1em;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #name {
     font-size: 8em;
   }
   .link-container {
     display: block;
+    padding-left: 10vw;
   }
 
   ul#list li.list-item a {
-    font-size: 6em;
+    font-size: 4em;
+    border-bottom: #90ee02 3px solid;
   }
 }
