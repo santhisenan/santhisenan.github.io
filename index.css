@@ -1,22 +1,15 @@
-#outer-container {
-  /* width: auto;
-  height: auto; */
-  /* display: inline-block; */
+body, html {
+  height: 100%;
+  display: grid;
   background-color:#121212;
-  text-align: center;
+}
 
-  position: absolute;
-	top:0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-
+#outer-container {
   margin: auto;
-
-  padding-top: 20%;
 }
 
 #name {
+  text-align: center;
   color: white;
   font-family: monospace;
   font-size: xxx-large;
@@ -33,14 +26,13 @@ ul#list li.list-item {
 }
 
 ul#list li.list-item a {
-  text-decoration: none;
   font-family: monospace;
   color: white;
   opacity: 0.87;
   font-size: x-large;
   text-decoration: underline;
   letter-spacing: 1px;
-  text-underline-position: under;
+  /* text-underline-position: under; */
 }
 
 .link-container {
@@ -48,4 +40,17 @@ ul#list li.list-item a {
   height: auto;
   display: inline-block;
   padding: 1em;
+}
+
+@media screen and (max-width: 1020px) {
+  #name {
+    font-size: 8em;
+  }
+  .link-container {
+    display: block;
+  }
+
+  ul#list li.list-item a {
+    font-size: 6em;
+  }
 }
