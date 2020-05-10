@@ -18,9 +18,10 @@
 
 #name {
   color: white;
-  font-family: Helvetica;
+  font-family: monospace;
   font-size: xxx-large;
   font-weight: 400;
+  letter-spacing: 1px;
 }
 
 ul#list {
@@ -33,11 +34,13 @@ ul#list li.list-item {
 
 ul#list li.list-item a {
   text-decoration: none;
-  font-family: Helvetica;
-  font-weight: bolder;
+  font-family: monospace;
   color: white;
   opacity: 0.87;
+  font-size: x-large;
   text-decoration: underline;
+  letter-spacing: 1px;
+  text-underline-position: under;
 }
 
 .link-container {
