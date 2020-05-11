@@ -27,12 +27,12 @@ ul#list li.list-item {
 
 ul#list li.list-item a {
   font-family: monospace;
-  color: #90ee02;
+  color: #BB86FC;
   opacity: 0.87;
   font-size: x-large;
   letter-spacing: 1px;
   text-decoration: none;
-  border-bottom: #90ee02 1px solid;
+  border-bottom: #BB86FC 1px solid;
 }
 
 .link-container {
@@ -53,6 +53,7 @@ ul#list li.list-item a {
 
   ul#list li.list-item a {
     font-size: 4em;
-    border-bottom: #90ee02 3px solid;
+    border-bottom: #BB86FC 3px solid;
+    padding-top: 0.3em;
   }
 }
