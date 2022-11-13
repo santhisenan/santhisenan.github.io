@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Santhisenan</title>
+    <link>https://santhisenan.github.io/posts/</link>
+    <description>Recent content in Posts on Santhisenan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Nov 2022 12:36:57 +0530</lastBuildDate><atom:link href="https://santhisenan.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>https://santhisenan.github.io/posts/my-first-post/</link>
+      <pubDate>Sun, 13 Nov 2022 12:36:57 +0530</pubDate>
+      
+      <guid>https://santhisenan.github.io/posts/my-first-post/</guid>
+      <description>My first post on Hugo.</description>
+    </item>
+    
+  </channel>
+</rss>
