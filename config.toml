@@ -1,0 +1,4 @@
+baseURL = 'https://santhisenan.github.io/'
+languageCode = 'en-us'
+title = 'Santhisenan'
+theme = "ink"
