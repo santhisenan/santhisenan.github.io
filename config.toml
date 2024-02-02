@@ -6,7 +6,7 @@ theme = "ink"
 copyright = "© Santhisenan A"
 
 [params]
-	subtitle = "Software Engineering. Machine Learning."
+	subtitle = "Working on Machine Learning"
 
 	# Optional 64x64 avatar image.
 	# avatar = "https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg"
