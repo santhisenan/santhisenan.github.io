@@ -3,9 +3,9 @@ title: "Neural Networks as Piecewise Linear Functions"
 date: 2024-04-06T11:44:59+08:00
 draft: false
 math: true
+tags: ["deep learning"]
+description: "A simple neural network as a piecewise linear function."
 ---
-
-This blogpost is based on my notes from the Shallow neural networks chapter in the book [Understanding Deep Learning](https://udlbook.github.io/udlbook/).
 
 ## Defining a simple neural network
 Today I learned that a simple shallow neural networks can be thought of as piecewise linear functions.  Consider a simple neural network that maps a single scalar value, $x$ to a single scalar value $y$ , given by
@@ -47,3 +47,5 @@ We can see that the final function turns out to be a piecewise linear function w
 Each hidden unit contributes one joint to the final function. So, with three hidden units there are four linear sections. However, only three of these sections are independent, since the fourth one is either zero or a function of the other three.
 
 In today's post, we saw how a simple neural network with one scalar input and one scalar output can be thought of as a piecewise linear function. The number of linear segments is determined by the number of hidden layers and the parameters they are weighted by. This idea can be extended to deeper neural network, but that's for another day.
+
+This blogpost is based on my notes from the Shallow neural networks chapter in the book [Understanding Deep Learning](https://udlbook.github.io/udlbook/).
