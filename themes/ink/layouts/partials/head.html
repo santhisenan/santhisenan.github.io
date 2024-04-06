@@ -1,3 +1,4 @@
+{{ if .Params.math }}{{ partial "helpers/katex.html" . }}{{ end }}
 <div class="header">
 	{{ if .Site.Params.Avatar }}
 		<div class="avatar">
