@@ -8,10 +8,9 @@ description: Some approaches to explain predictions from a langauge model
 ## Why care about explainability?
 
 Explaining why Large Language Models (LLMs) make a certain prediction is difficult. This is because LLMs are very complex "black box" models, i.e. their inner working mechanisms are opaque. However, there are mainly two reasons why we need to develop methods for explaining LLM predictions:
+1. For end users of the models, explaining a model's predictions will help understand the reasoning behind a certain prediction, which can help build trust in the system they are using. For example, if an LLM is used the medical domain to detect a certain disease, the medical practitioners would need to understand the reasoning behind the predictions to verify the accuracy.
 
-    1. For end users of the models, explaining a model's predictions will help understand the reasoning behind a certain prediction, which can help build trust in the system they are using. For example, if an LLM is used the medical domain to detect a certain disease, the medical practitioners would need to understand the reasoning behind the predictions to verify the accuracy.
-
-    2. For developers of these complex systems, explaining the predictions will help them understand the model's biases, risks and improve the wrong predictions. In other words, explainability aids in debugging these black boxes.
+2. For developers of these complex systems, explaining the predictions will help them understand the model's biases, risks and improve the wrong predictions. In other words, explainability aids in debugging these black boxes.
 
 Many techniques have been developed for explaining LLM predictions. We can categorise these techniques based on how these models are trained. One way to train an LLM is by using the traditional fine-tuning technique, where, the LLM is first pre-trained on a large corpus of unlabelled text data, and then fine-tuned on a smaller labelled dataset. For example, during their pre-training stage, protein LLMs are first trained on an unlabelled dataset of millions of protein sequences. Later, these models are then fine-tuned on smaller task specific datasets, which may contain a few thousand samples. The second way to train an LLM involves the use of prompts. The models are trained in a zero-shot or few-shot manner using, for example, masked natural language sentences for the model to fill in. In this blog post, we will look at some techniques for LLM explainability for the traditional fine-tuning paradigm. Specifically, we will focus on techniques that generate local explanations for LLM predictions.
 
@@ -42,5 +41,5 @@ To conclude, gaining insights into how large language models work is crucial for
 
 These are my notes from the following paper:
 
-    > H. Zhao *et al.*, “Explainability for Large Language Models: A Survey,” *ACM Trans. Intell. Syst. Technol.*, vol. 15, no. 2, p. 20:1-20:38, Feb. 2024, doi: [10.1145/3639372](https://doi.org/10.1145/3639372).  
+> H. Zhao *et al.*, “Explainability for Large Language Models: A Survey,” *ACM Trans. Intell. Syst. Technol.*, vol. 15, no. 2, p. 20:1-20:38, Feb. 2024, doi: [10.1145/3639372](https://doi.org/10.1145/3639372).  
 
