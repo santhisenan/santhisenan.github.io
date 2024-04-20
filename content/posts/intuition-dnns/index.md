@@ -1,7 +1,7 @@
 ---
 title: "Intuition for deep neural networks"
 date: 2024-04-13T10:03:13+08:00
-draft: true
+draft: false
 math: true
 tags: ["deep learning"]
 description: "Extending the piecewise linear functions intuition to a simple two-layer deep neural network."
