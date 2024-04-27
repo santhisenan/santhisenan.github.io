@@ -1,7 +1,7 @@
 # Hugo Commands
 - adding content
 ```
-hugo new content posts/my-first-post.md
+hugo new content posts/my-first-post/index.md
 ```
 
 - building drafts
