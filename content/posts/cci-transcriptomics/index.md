@@ -1,5 +1,5 @@
 ---
-title: "Why Use Transcriptomics for Cell-Cell Interactions"
+title: "Why Use Transcriptomics to Analyse Cell-Cell Interactions?"
 date: 2024-04-27T11:49:09+08:00
 draft: false
 tags: ["bioinformatics"]
@@ -23,7 +23,7 @@ Directly measuring the proteins involved in the CCI is difficult since it requir
 Proteomics and transcriptomics can be used to reinforce such studies. Proteomics is the field that studies the set of proteins that are expressed in a cell, tissue or an organism at a given time. Proteomics is useful for identifying and quantifying proteins that are secreted or displayed cell surfaces. Transcriptomics is the study of complete RNA transcripts that are produced by the genome. Using techniques like RNA sequencing (RNA-seq), transcriptomics helps in understanding which genes are being actively expressed in cells, providing *indirect evidence* for the presence of proteins. Evidence of expression from proteomics and transcriptomics can further reinforce the presence of proteins identified using biochemical assays.
 
 
-## Why use transcriptomics for CCI?
+## Why use transcriptomics to analyse CCI?
 While proteomics is preferable since they directly measure protein abundances, RNA-seq datasets are plentiful and easier to access and analyse. Since RNA sequencing can be performed on bulk samples, micro-dissected specimens or single cell suspensions (single cell proteomic technologies are still under development), it can also enable CCI studies at different resolutions. Results from transcriptomics should be carefully considered and validated to avoid misleading hypothesis. However, the ubiquity and ease of analysis have enabled many recent studies to infer CCI from gene expression. In particular, coordinated gene expression of ligands and receptors can be used to infer intercellular communication.
 
 In this post, we looked at what are cell-cell interactions and why transcriptomics can be used for detecting these interactions. In a future post, we can look at specific transcriptomics methods that is helpful for these analysis.
