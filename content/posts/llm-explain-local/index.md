@@ -2,6 +2,7 @@
 title: "Approaches to generating local explanations in LLMs"
 date: 2024-04-20T11:31:28+08:00
 draft: false
+tags: ["deep-learning"]
 description: Some approaches to explain predictions from a langauge model
 ---
 
