@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ with .Site.Params.description }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}">
+  <title>{{ .Site.Title }}</title>
+  <style>
+    :root {
+      --page-bg: #ffffff;
+      --text: #1d241d;
+      --muted: #495349;
+      --line: #3f7a47;
+      --accent: #2f6b3b;
+      --sans: Arial, Helvetica, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--page-bg);
+      color: var(--text);
+      font-family: var(--sans);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus-visible {
+      color: var(--accent);
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .site-header-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .site-title {
+      margin: 0;
+      color: var(--accent);
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+    }
+
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 0.95rem;
+    }
+
+    .hero {
+      padding: 96px 0 56px;
+    }
+
+    .hero-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      max-width: 720px;
+      margin: 0;
+      color: var(--text);
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    .subtitle {
+      max-width: 640px;
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+      font-weight: 400;
+      line-height: 1.75;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .blog-link {
+      display: inline-block;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--line);
+      color: var(--accent);
+      font-size: 0.98rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+    }
+
+    .posts {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 20px 96px;
+    }
+
+    .posts-inner {
+      max-width: 720px;
+      border-top: 1px solid var(--line);
+      padding-top: 26px;
+    }
+
+    .posts-title {
+      margin: 0 0 18px;
+      color: var(--text);
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+    }
+
+    .post-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .post-item + .post-item {
+      margin-top: 16px;
+    }
+
+    .post-link {
+      display: inline-block;
+      color: var(--text);
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .post-meta {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 720px) {
+      .site-header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .site-nav {
+        gap: 14px 18px;
+      }
+
+      .hero-inner {
+        padding: 0 20px;
+      }
+
+      .hero {
+        padding: 72px 0 48px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <p class="site-title">{{ .Site.Title }}</p>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="{{ "blog" | relURL }}">Blog</a>
+        <a href="https://github.com/" rel="me">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <main class="hero">
+    <section class="hero-inner" aria-labelledby="landing-title">
+      <h1 id="landing-title">{{ .Site.Title }}</h1>
+      <p class="subtitle">
+        Master&apos;s student at Nanyang Technological University, working on brain MRI analysis and writing about machine learning, deep learning, and interpretability.
+      </p>
+      <div class="actions">
+        <a class="blog-link" href="{{ "blog" | relURL }}">Blog</a>
+      </div>
+    </section>
+  </main>
+  <section class="posts" aria-labelledby="latest-posts-title">
+    <div class="posts-inner">
+      <h2 class="posts-title" id="latest-posts-title">Latest posts</h2>
+      <ul class="post-list">
+        {{ range first 5 (where .Site.RegularPages.ByDate.Reverse "Type" "blog") }}
+        <li class="post-item">
+          <a class="post-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <p class="post-meta">{{ .Date.Format "02 Jan 2006" }}</p>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </section>
+</body>
+</html>
