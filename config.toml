@@ -10,6 +10,16 @@ copyright = "© Santhisenan A"
 [params]
 	subtitle = "Working on Machine Learning"
 	description = "Working on Machine Learning"
+	math = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)'], ['$', '$']]
 
 # Nav.
 [[menu.main]]

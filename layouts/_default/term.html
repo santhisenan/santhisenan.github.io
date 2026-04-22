@@ -1,19 +1,5 @@
 {{ define "main" }}
 <content>
-  {{ if .Data.Terms }}
-  <ul class="blog-posts">
-    {{ range .Data.Terms.Alphabetical }}
-    <li>
-      <span>
-        <i>{{ .Count }} posts</i>
-      </span>
-      <a href="{{ .Page.Permalink }}">#{{ .Page.Title }}</a>
-    </li>
-    {{ else }}
-    <li>No tags yet</li>
-    {{ end }}
-  </ul>
-  {{ else }}
   <h3 style="margin-bottom:0">#{{ .Title }}</h3>
   <small>
     <a href="{{ "tags" | relURL }}">All tags</a>
@@ -36,6 +22,5 @@
     <li>No posts yet</li>
     {{ end }}
   </ul>
-  {{ end }}
 </content>
 {{ end }}

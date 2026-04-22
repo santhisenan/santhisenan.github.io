@@ -1,0 +1,9 @@
+{{- $mathEnabled := .Site.Params.math -}}
+{{- if isset .Params "math" -}}
+  {{- $mathEnabled = .Params.math -}}
+{{- end -}}
+{{- if $mathEnabled -}}
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex.min.css">
+{{- end -}}
