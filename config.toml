@@ -1,25 +1,15 @@
 baseURL = 'https://santhisenan.github.io/'
 languageCode = 'en-us'
 title = 'Santhisenan'
-theme = "ink"
+theme = "hugo-bearblog"
+author = "Santhisenan A"
+enableRobotsTXT = true
 
 copyright = "© Santhisenan A"
 
 [params]
 	subtitle = "Working on Machine Learning"
-
-	# Optional 64x64 avatar image.
-	# avatar = "https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg"
-
-	# Content types to disable Disqus on.
-	disableDisqusTypes = ["page"]
-	
-	featherIconsCDN = true
-
-	mode = "auto" # "dark" or "auto"
-	# customCSS = "css/custom.css"  # Custom CSS applied to default styles.
-	# customDarkCSS = "css/custom-dark.css"  # Custom styles applied to dark mode css.
-	# customJS = ["js/custom.js", "js/custom1.js"]  # Custom JS scripts.
+	description = "Working on Machine Learning"
 
 # Nav.
 [[menu.main]]
@@ -27,35 +17,10 @@ name = "Home"
 url = "/"
 weight = 1
 
-# [[menu.main]]
-# name = "All posts"
-# url = "/posts"
-# weight = 2
-
-[[menu.main]]
-name = "About"
-url = "/about"
-weight = 3
-
 [[menu.main]]
 name = "Tags"
 url = "/tags"
-weight = 4
-
-[[params.social]]
-name = "Github"
-icon = "github"
-url = "https://github.com/santhisenan"
-
-[[params.social]]
-name = "LinkedIn"
-icon = "linkedin"
-url = "https://www.linkedin.com/in/santhisenan/"
-
-# [[params.social]]
-# name = "RSS"
-# icon = "rss"
-# url = "/index.xml"
+weight = 2
 
 [taxonomies]
    tag = "tags"
