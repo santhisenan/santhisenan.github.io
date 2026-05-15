@@ -33,7 +33,8 @@
     }
 
     main {
-      width: min(34rem, calc(100% - 3rem));
+      width: min(42rem, calc(100% - 3rem));
+      padding: 3rem 0;
     }
 
     img {
@@ -50,6 +51,13 @@
       letter-spacing: -0.04em;
     }
 
+    h2 {
+      margin: 2rem 0 0.75rem;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+
     p {
       margin: 0 0 1.5rem;
       color: var(--muted);
@@ -59,6 +67,28 @@
     nav {
       display: flex;
       gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    section p {
+      margin-bottom: 0.75rem;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.25rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .date {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-right: 0.5rem;
+    }
+
+    .news-item {
+      color: var(--fg);
     }
 
     a {
@@ -71,12 +101,31 @@
 <body>
   <main>
     <img src="assets/photo.jpeg" alt="Santhisenan">
-    <h1>Santhisenan</h1>
-    <p>Working on machine learning.</p>
+    <h1>Santhisenan Ajith</h1>
+    <p>I am a PhD student at Nanyang Technological University, Singapore,
+      advised by
+      <a href="https://personal.ntu.edu.sg/asjagath/">Jagath Rajapakse</a> and
+      <a href="https://www.ntu.edu.sg/research/faculty-directory/detail/Bernett-Lee">Bernett Lee</a>,
+      working on machine learning for single-cell and spatial transcriptomics.
+      My research focuses on representation learning, graph neural networks,
+      and foundation models for computational biology.</p>
     <nav aria-label="Primary">
       <a href="https://github.com/santhisenan">GitHub</a>
       <a href="https://santhisenan.github.io/blog/">Blog</a>
     </nav>
+
+    <section aria-labelledby="writing">
+      <h2 id="writing">Writing</h2>
+      <p>I occasionally write about machine learning, computational biology, and research.</p>
+      <a href="https://santhisenan.github.io/blog/">View blog</a>
+    </section>
+
+    <section aria-labelledby="news">
+      <h2 id="news">News</h2>
+      <ul>
+        <li><span class="date">Aug 2025</span><span class="news-item">Started PhD at NTU</span></li>
+      </ul>
+    </section>
   </main>
 </body>
 </html>
