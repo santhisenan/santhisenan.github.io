@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Santhisenan</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f4ee;
+      --fg: #1f1f1f;
+      --muted: #666;
+      --link: #0f5cc0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121212;
+        --fg: #f3f0ea;
+        --muted: #aaa;
+        --link: #8ab4ff;
+      }
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    main {
+      width: min(34rem, calc(100% - 3rem));
+    }
+
+    h1 {
+      margin: 0 0 0.75rem;
+      font-size: clamp(2rem, 5vw, 3rem);
+      letter-spacing: -0.04em;
+    }
+
+    p {
+      margin: 0 0 1.5rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.18em;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Santhisenan</h1>
+    <p>Working on machine learning.</p>
+    <nav aria-label="Primary">
+      <a href="https://github.com/santhisenan">GitHub</a>
+      <a href="https://santhisenan.github.io/blog/">Blog</a>
+    </nav>
+  </main>
+</body>
+</html>

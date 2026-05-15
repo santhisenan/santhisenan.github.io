@@ -1,10 +1,3 @@
-# Hugo Commands
-- adding content
-```
-hugo new content posts/my-first-post/index.md
-```
+# santhisenan.github.io
 
-- building drafts
-```
-hugo server -D
-```
+Personal website for Santhisenan.
